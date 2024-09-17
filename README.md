@@ -12,8 +12,7 @@ In this project, we tested the following public datasets:
 * M2DGR: https://github.com/SJTU-ViSYS/M2DGR.git
 * NCLT: http://robots.engin.umich.edu/nclt/
 * AVIA Dataset: https://github.com/ziv-lin/r3live_dataset   ([R3live](https://github.com/hku-mars/r3live.git))  
-
-We will release the data we have collected ourselves to the public at a later time.  
+ 
 The following table shows the correspondence between the sequences used in the experiments and the results reported in the paper:
 
 <table>
@@ -190,8 +189,9 @@ The following table shows the correspondence between the sequences used in the e
 ### The data we collected ourselves:
 The data collection platform is a four-wheel independent steering robot equipped with a Hesai-XT16 LiDAR, three Livox-360 semi-solid-state LiDARs, an RGB camera, and an Xsens MTi-300 IMU. The data was collected along a trajectory that starts and ends at the same point.
 
-![Dataset](./pics/dataset.png)
+We will release the data we have collected ourselves to the public at a later time. 
 
+![Dataset](./pics/dataset.png)
 
 
 ## Paper Submission and Acceptance Progress
