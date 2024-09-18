@@ -273,6 +273,11 @@ topics:      /livox/imu_192_168_1_101     94428 msgs    : sensor_msgs/Imu
 All the other open-source projects we tested, along with specific parameters and configurations, are available in the repository [comp-exp](https://github.com/Liansheng-Wang/comp-exp.git). All projects can be successfully compiled on an Ubuntu 20.04, ROS1, X64 system. Those interested can check the details there.
 
 comp-exp: https://github.com/Liansheng-Wang/comp-exp.git
+
+## Thanks
+I would like to express my sincere gratitude to [Chengwei Zhao](https://github.com/chengwei0427), [Dongjiao He](https://github.com/Joanna-HE), [Shuai Liang](https://github.com/robot-dreamer) and [Chi Yan](https://github.com/yanchi-3dv) for their invaluable guidance and assistance on this paper.
+
+
 ## Paper Submission and Acceptance Progress
 
 - **Initial Submission**: September 15, 2024 - Paper submitted to ICRA 2025. 
