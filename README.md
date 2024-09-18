@@ -6,7 +6,6 @@ This repository contains the source code for our ICRA2025 paper **"InGM-LIO: A M
 **The code will release soon upen the paper be accepted.**
 
 
-
 ## Data Sequence Correspondence
 In this project, we tested the following public datasets:
 * M2DGR: https://github.com/SJTU-ViSYS/M2DGR.git
@@ -186,14 +185,94 @@ The following table shows the correspondence between the sequences used in the e
   </tr>
 </table>
 
-### The data we collected ourselves:
+## ECUST-Dataset
 The data collection platform is a four-wheel independent steering robot equipped with a Hesai-XT16 LiDAR, three Livox-360 semi-solid-state LiDARs, an RGB camera, and an Xsens MTi-300 IMU. The data was collected along a trajectory that starts and ends at the same point.
-
-We will release the data we have collected ourselves to the public at a later time. 
 
 ![Dataset](./pics/dataset.png)
 
+### Dataset Download
+At present, we have uploaded the dataset to [Baidu Cloud](https://pan.baidu.com/s/18TVygoaLQTda5qpqXs415g?pwd=i9m9), and other ways of obtaining it will be done soon.
+```
+LINK: https://pan.baidu.com/s/18TVygoaLQTda5qpqXs415g?pwd=i9m9
+Extracted code: i9m9
+```
 
+### Data format
+Each of our sequences is released as a simple rosbag file.
+
+**campus.bag**
+```
+rosbag info campus.bag
+-------------------------------------------------------
+path:        campus.bag
+version:     2.0
+duration:    18:31s (1111s)
+start:       Nov 01 2023 15:30:33.15 (1698823833.15)
+end:         Nov 01 2023 15:49:04.62 (1698824944.62)
+size:        71.8 GB
+messages:    1222589
+compression: none [44480/44480 chunks]
+types:       livox_ros_driver2/CustomMsg [e4d6829bdfe657cb6c21a746c86b21a6]
+             sensor_msgs/Image           [060021388200f6f0f447d0fcd9c64743]
+             sensor_msgs/Imu             [6a62c6daae103f4ff57a132d6f95cec2]
+             sensor_msgs/PointCloud2     [1158d486dd51d683ce2f1be655c3c181]
+topics:      /camera/color/image_raw       33349 msgs    : sensor_msgs/Image          
+             /hesai_front/pandar           11115 msgs    : sensor_msgs/PointCloud2    
+             /imu/data                    444580 msgs    : sensor_msgs/Imu            
+             /livox/imu_192_168_1_101     222284 msgs    : sensor_msgs/Imu            
+             /livox/imu_192_168_1_150     222284 msgs    : sensor_msgs/Imu            
+             /livox/imu_192_168_1_174     222284 msgs    : sensor_msgs/Imu            
+             /livox/lidar_192_168_1_101    22230 msgs    : livox_ros_driver2/CustomMsg
+             /livox/lidar_192_168_1_150    22229 msgs    : livox_ros_driver2/CustomMsg
+```
+
+**campus_under_garage.bag**
+```
+rosbag info campus_under_garage.bag 
+-------------------------------------------------------
+path:        campus_under_garage.bag
+version:     2.0
+duration:    20:27s (1227s)
+start:       Nov 01 2023 15:49:56.82 (1698824996.82)
+end:         Nov 01 2023 16:10:24.53 (1698826224.53)
+size:        79.5 GB
+messages:    1350383
+compression: none [49135/49135 chunks]
+types:       livox_ros_driver2/CustomMsg [e4d6829bdfe657cb6c21a746c86b21a6]
+             sensor_msgs/Image           [060021388200f6f0f447d0fcd9c64743]
+             sensor_msgs/Imu             [6a62c6daae103f4ff57a132d6f95cec2]
+             sensor_msgs/PointCloud2     [1158d486dd51d683ce2f1be655c3c181]
+topics:      /camera/color/image_raw       36836 msgs    : sensor_msgs/Image          
+             /hesai_front/pandar           12279 msgs    : sensor_msgs/PointCloud2    
+             /imu/data                    491073 msgs    : sensor_msgs/Imu            
+             /livox/imu_192_168_1_101     245531 msgs    : sensor_msgs/Imu            
+             /livox/imu_192_168_1_150     245530 msgs    : sensor_msgs/Imu            
+             /livox/imu_192_168_1_174     245529 msgs    : sensor_msgs/Imu            
+             /livox/lidar_192_168_1_101    24554 msgs    : livox_ros_driver2/CustomMsg
+             /livox/lidar_192_168_1_150    24555 msgs    : livox_ros_driver2/CustomMsg
+             /livox/lidar_192_168_1_174    24496 msgs    : livox_ros_driver2/CustomMsg
+```
+
+**lab_building.bag**
+```
+path:        lab_building.bag
+version:     2.0
+duration:    7:52s (472s)
+start:       Jan 29 2024 11:03:26.71 (1706497406.71)
+end:         Jan 29 2024 11:11:18.87 (1706497878.87)
+size:        1.7 GB
+messages:    103355
+compression: none [1868/1868 chunks]
+types:       livox_ros_driver2/CustomMsg [e4d6829bdfe657cb6c21a746c86b21a6]
+             sensor_msgs/Imu             [6a62c6daae103f4ff57a132d6f95cec2]
+topics:      /livox/imu_192_168_1_101     94428 msgs    : sensor_msgs/Imu            
+             /livox/lidar_192_168_1_101    8927 msgs    : livox_ros_driver2/CustomMsg
+```
+
+## Details of Comparative Experiments
+All the other open-source projects we tested, along with specific parameters and configurations, are available in the repository [comp-exp](https://github.com/Liansheng-Wang/comp-exp.git). All projects can be successfully compiled on an Ubuntu 20.04, ROS1, X64 system. Those interested can check the details there.
+
+comp-exp: https://github.com/Liansheng-Wang/comp-exp.git
 ## Paper Submission and Acceptance Progress
 
 - **Initial Submission**: September 15, 2024 - Paper submitted to ICRA 2025. 
