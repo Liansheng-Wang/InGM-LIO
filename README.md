@@ -281,7 +281,7 @@ I would like to express my sincere gratitude to [Chengwei Zhao](https://github.c
 ## Paper Submission and Acceptance Progress
 
 - **Initial Submission**: September 15, 2024 - Paper submitted to ICRA 2025. 
-- **Under Review**: Currently under review by the ICRA 2025 committee. 
+
 
 
 
