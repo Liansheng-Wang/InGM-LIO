@@ -281,10 +281,12 @@ I would like to express my sincere gratitude to [Chengwei Zhao](https://github.c
 ## Paper Submission and Acceptance Progress
 
 - **Initial Submission**: September 15, 2024 - Paper submitted to ICRA 2025. 
+- **Under review**: October 1st, 2024.
 
 
-
-
+## Ongoing Plan
+- [ ] Validation of more publicly available datasets
+- [ ] Update this project to be compatible with ROS2 Humble.
 
 
 
